@@ -6,7 +6,7 @@ function play(input){
     let output = rps(input);
     let message = document.getElementById("outputText");
     message.innerHTML = output;
-    scoreText = "Score = " + PLAYER.toString()
+    scoreText = "Score = " + PLAYER.toString();
     score = document.getElementById("scores");
     score.innerHTML = scoreText;
 
@@ -15,7 +15,7 @@ function play(input){
 // takes a number 0,1,2 as the player move. compares to a random computer move to see who wins rps
 // returns "win", "lose", "draw"
 function rps(player){
-    let outcome = "error"
+    let outcome = "error";
     let com = Math.floor(Math.random()*3);
     if (player == com){
         outcome = "draw";
